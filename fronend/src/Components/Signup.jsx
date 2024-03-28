@@ -80,7 +80,7 @@ const Signup = () => {
   return (
     <>
       <Navbar />
-      <Flex align="center" justify="center" minH="100vh">
+      <Flex align="center" justify="center" h="100vh" mt={"4%"}>
         <Box maxW="md" w="full" bg="white" shadow="md" rounded="md" p="8">
           <Heading as="h1" size="xl" fontWeight="bold" mb="4">
             Sign Up

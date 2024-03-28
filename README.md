@@ -2,7 +2,7 @@
 This is a task manager application built with a frontend using HTML, CSS, JavaScript, React.js, Redux, and Chakra UI, and a backend built with Node.js, Express, and MongoDB. Users can manage their tasks by adding, editing, deleting, and marking tasks as completed.
 
 ##  Deployed link
-
+https://resonant-youtiao-d8a285.netlify.app/
 
 ## JSON Sever (Backend deployed link) 
 https://task-manager-d56x.onrender.com
