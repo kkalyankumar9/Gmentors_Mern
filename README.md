@@ -1,13 +1,26 @@
 # Gmentors_Mern
+This is a task manager application built with a frontend using HTML, CSS, JavaScript, React.js, Redux, and Chakra UI, and a backend built with Node.js, Express, and MongoDB. Users can manage their tasks by adding, editing, deleting, and marking tasks as completed.
+
 ##  Deployed link
+
 
 ## JSON Sever (Backend deployed link) 
 https://task-manager-d56x.onrender.com
+
 ## Tech Stack
-Frontend
-HTML | CSS | Javascript | React.js | Redux | Chakra UI
-Backend
-Node.js | Express | Mongo DB
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+- React.js
+- Redux
+- Chakra UI
+
+### Backend
+- Node.js
+- Express
+- MongoDB
 
 ## Home Page
 ![image](https://github.com/kkalyankumar9/Gmentors_Mern/assets/112814583/6fa8d06d-bffc-4545-a169-3fde9b50f818)
