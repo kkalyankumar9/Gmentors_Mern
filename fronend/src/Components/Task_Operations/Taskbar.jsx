@@ -69,6 +69,7 @@ const TaskBar = () => {
   return (
     <>
       <Navbar />
+      
       <Box mx="auto" my="4" p="4" borderWidth="1px" borderRadius="lg"  mt={"100px"}>
         {isLoading && <p className="text-center">Loading...</p>}
 
@@ -84,6 +85,7 @@ const TaskBar = () => {
             <Text fontSize="md" fontWeight="bold" mt="4" color="gray">
               Description: {task.description}
             </Text>
+           
             <Flex justify="space-evenly">
               <Button
                 colorScheme="red"
