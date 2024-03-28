@@ -19,7 +19,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logoutUser } from '../Redux/Auth/action';
-
+import { AddIcon} from '@chakra-ui/icons'
 
 
 const Navbar = () => {
@@ -62,7 +62,7 @@ const toast=useToast()
             boxSize={{ base: '10', md: '14' }} // Adjust box size for responsiveness
             mr="2"
           />
-          <Heading size="md">Task Manager</Heading>
+          <Heading size="lg"   fontWeight="bold" >Task Manager</Heading>
         </Flex>
       </ChakraLink>
 
@@ -70,8 +70,9 @@ const toast=useToast()
 
       <Flex display={{ base: 'none', md: 'flex' }} gap={"12px"} align={"center"} spacing={4}>
         <ChakraLink as={Link} to="/addpatient">
-          <Button bg="teal.500" color="white" _hover={{ bg: 'teal.700' }}>
+          <Button bg="teal.500"    fontWeight="bold" fontSize={"md"} color="white" _hover={{ bg: 'teal.700' }}>
             Add Task
+            <AddIcon ml={"10px"}/>
           </Button>
         </ChakraLink>
 
@@ -79,6 +80,7 @@ const toast=useToast()
           {!isAuth && (
           <ChakraLink
           as={Link}
+          
           to="/signup"
           fontSize={{ base: 'sm', md: 'lg' }}
           _hover={{ textDecoration: 'underline' }}
@@ -89,6 +91,7 @@ const toast=useToast()
           rounded="md"
           transition="background 0.3s ease-in-out, color 0.3s ease-in-out"
           _focus={{ outline: 'none' }} 
+          fontWeight="bold" mt="4"
         >
           Sign up
         </ChakraLink>
@@ -106,6 +109,7 @@ const toast=useToast()
             transition="background 0.3s ease-in-out, color 0.3s ease-in-out"
             _focus={{ outline: 'none' }} 
               onClick={handleClick}
+              fontWeight="bold" mt="4"
             >
               Logout
             </Button>
@@ -120,8 +124,10 @@ const toast=useToast()
               py="2"  
               px="4"  
               rounded="md"
+              ml={"25px"}
               transition="background 0.3s ease-in-out, color 0.3s ease-in-out"
               _focus={{ outline: 'none' }} 
+              fontWeight="bold" mt="4"
             >
               Sign in
             </ChakraLink>
