@@ -43,3 +43,5 @@ https://task-manager-d56x.onrender.com
 ![image](https://github.com/kkalyankumar9/Gmentors_Mern/assets/112814583/0b577378-0729-4476-b831-42d9ab527ebe)
 ## Mobile
 ![image](https://github.com/kkalyankumar9/Gmentors_Mern/assets/112814583/78eb6249-78b1-42e5-94ee-0c34bdcbb406)
+## Short Vedio
+https://drive.google.com/file/d/17zv2tepArgkow8Vcg8gXIlg5REoIHpqI/view?usp=sharing
