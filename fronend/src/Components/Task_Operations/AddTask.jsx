@@ -39,12 +39,15 @@ const Addtask = () => {
         console.error("Error adding data:", error);
       });
   };
+ const  handleClickback=()=>{
+  navigate("/")
+  }
 
   return (
     <>
       <Navbar />
   
-      <VStack width={"400px"}  align="center" justify="center" m={"auto"}  h="full" mt={"100px"}  boxShadow= "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" p={9}>
+      <VStack width={"400px"}  align="center" justify="center" m={"auto"}  h="full" mt={"200px"}  boxShadow= "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px" p={9}>
 
         <form onSubmit={handleSubmit} style={{ width: "300px" }}  >
           <FormControl mb="4" >
@@ -81,6 +84,16 @@ const Addtask = () => {
             Add
           </Button>
         </form>
+        <Button
+          
+            colorScheme="gray"
+            _hover={{ bg: "blue.700" }}
+            size="md"
+            rounded="md"
+            onClick={handleClickback}
+          >
+            Back to Home
+          </Button>
       </VStack>
  
     </>

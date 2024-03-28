@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { signUp } from "../Redux/Auth/action";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+
 import {
   Box,
   Button,
@@ -23,6 +24,7 @@ const Signup = () => {
     password: "",
   };
   const [signData, setSignData] = useState(initialData);
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const toast = useToast(); // Initialize useToast
 
@@ -55,7 +57,8 @@ const Signup = () => {
     try {
       const response = await dispatch(signUp(user));
       console.log("Signup successful:", response);
-
+      
+      navigate("/signin")
       // Display success message using toast
       toast({
         title: "Signup Successful",
@@ -64,6 +67,7 @@ const Signup = () => {
         duration: 5000,
         isClosable: true,
       });
+      
     } catch (error) {
       // Display error message using toast
       console.error("Signup error:", error);

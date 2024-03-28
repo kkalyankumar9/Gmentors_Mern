@@ -18,6 +18,7 @@ export const signUp = (signup_data) => async (dispatch) => {
       signup_data
     );
     dispatch({ type: SIGNUP_SUCCESS, payload: res.data });
+   
     return res.data;
   } catch (err) {
     dispatch({ type: SIGNUP_ERROR, payload: err.message });
@@ -54,6 +55,7 @@ export const logoutUser = () => async (dispatch) => {
         },
       });
       dispatch({ type: LOGOUT_SUCCESS });
+
     } catch (err) {
       throw err;
     }

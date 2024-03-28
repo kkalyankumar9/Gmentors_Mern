@@ -17,7 +17,7 @@ const MainRoute = () => {
         <Route path="/signup" element={<Signup/>}/>
         <Route path="/signin" element={<Signin/>}/>
         <Route path="/taskbar" element={<TaskBar/>}/>
-        <Route path="/addpatient" element={<PrivateRoute><Addtask/></PrivateRoute>}/>
+        <Route path="/addtask" element={<PrivateRoute><Addtask/></PrivateRoute>}/>
         <Route path="/taskedit/:taskId" element={<PrivateRoute><EditTask/></PrivateRoute>}/>
        
     </Routes>

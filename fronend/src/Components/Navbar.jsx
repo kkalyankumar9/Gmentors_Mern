@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { logoutUser } from '../Redux/Auth/action';
 import { AddIcon} from '@chakra-ui/icons'
+import { useEffect } from 'react';
 
 
 const Navbar = () => {
@@ -30,6 +31,7 @@ const Navbar = () => {
 const toast=useToast()
   const handleClick = () => {
     dispatch(logoutUser());
+  
     toast({
       title: "Logout Successfull",
       status: "success",
@@ -69,7 +71,7 @@ const toast=useToast()
       <Spacer />
 
       <Flex display={{ base: 'none', md: 'flex' }} gap={"12px"} align={"center"} spacing={4}>
-        <ChakraLink as={Link} to="/addpatient">
+        <ChakraLink as={Link} to="/addtask">
           <Button bg="teal.500"    fontWeight="bold" fontSize={"md"} color="white" _hover={{ bg: 'teal.700' }}>
             Add Task
             <AddIcon ml={"10px"}/>
@@ -109,7 +111,7 @@ const toast=useToast()
             transition="background 0.3s ease-in-out, color 0.3s ease-in-out"
             _focus={{ outline: 'none' }} 
               onClick={handleClick}
-              fontWeight="bold" mt="4"
+              fontWeight="bold" 
             >
               Logout
             </Button>
